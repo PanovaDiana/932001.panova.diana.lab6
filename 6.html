@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Frontend Task №7</title>
+		<link rel="stylesheet" type="text/css" href="6.css">
+    </head>
+    <body>
+        <script>
+            function Button1(){
+                var elem1 = document.getElementById("CatDiv");
+                var elem2 = document.getElementById("DogDiv");
+                var elem3 = document.getElementById("CatImg");
+                var elem4 = document.getElementById("DogImg");
+
+                elem4.style.display = "none";
+                elem1.style.width = "730px";
+                elem2.style.width = "68px";
+                elem2.style.marginLeft = "730px";
+                elem3.style.width = "623px";
+            }
+
+            function Button3(){
+                var elem1 = document.getElementById("CatDiv");
+                var elem2 = document.getElementById("DogDiv");
+                var elem3 = document.getElementById("CatImg");
+                var elem4 = document.getElementById("DogImg");
+
+                elem3.style.display = "none";
+                elem1.style.width = "68px";
+                elem2.style.width = "730px";
+                elem2.style.marginLeft = "68px";
+                elem4.style.width = "525px"; 
+               
+            }
+            
+            function Button2(){
+                var elem1 = document.getElementById("CatDiv");
+                var elem2 = document.getElementById("DogDiv");
+                var elem3 = document.getElementById("CatImg");
+                var elem4 = document.getElementById("DogImg");
+
+                elem3.style.display = "block";
+                elem4.style.display = "block";
+                elem1.style.width = "399px";
+                elem2.style.width = "399px";
+                elem2.style.marginLeft = "399px";
+                elem3.style.width = "374px"; 
+                elem4.style.width = "374px"; 
+            }
+        
+        </script>
+        <div class="ButtonList">
+            <div class="button" class onclick="Button1();">Левая колонка</div>
+            <div class="button" class onclick="Button2();">Обе две</div>
+            <div class="button" class onclick="Button3();">Правая колонка</div>
+        </div>
+        <div class = "clear"></div>
+        <div class="ImgList">
+            <div id="CatDiv" class = "ContentBlock"><img id="CatImg" alt = "Cat" src="cat.jpg"></div>
+            <div id="DogDiv" class = "ContentBlock"><img id="DogImg" alt = "Dog" src="dog.jpg"></div>
+        </div>
+    </body>
+   
+</html>
